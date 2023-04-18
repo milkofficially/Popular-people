@@ -18,7 +18,7 @@ img {
     height: 100%;
     object-fit: cover;
 }
-
+/*Header*/
 #header{
     width: 100%;
     height: 50vh;
@@ -66,35 +66,189 @@ img {
 .fa:hover {
   opacity: 0.7;
 }
+/*sadrzaj*/
 .sadrzaj{
     width: 100%;
-    height: 300vh;
+    height: fit-content;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-content: flex-start;
     
 }
+/*Slike izobrnika*/
 div.polaroid{
     height: 60vh;
     width: 29.3%;
     border-radius: 5px;
-    box-shadow: 2px 4px 8px 3px Gainsboro;
+    box-shadow: 10px 4px 10px 5px Gainsboro;
     margin: 2%;
-    border-top:10px solid navy;
-    border-bottom:10px solid navy;
+    border-top:10px solid rgb(59, 59, 59);
+    border-bottom:10px solid rgb(59, 59, 59);
     object-fit: cover;
+    position: relative;
     
 }
 .caption{
     text-align: center;
     font-size:larger ;
-    font-weight: 500;    
-    margin: 10px;
+    font-weight: 700;    
+    margin: 1vh;
+    background-color: navy;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    
 }
+/*Pozicioniranje teksta na slikama*/
+#bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+#top-left {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}  
 @media screen and (max-width: 650px) {
     .polaroid {
         width: 96%;
         margin: 2% auto;
     }
 }
+#haad{
+    color: black;
+}
+/*Footer*/
+#footer{
+    background-color: navy;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-top: 3px solid;
+  }
+  .copyrights, .kontakti{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(29, 28, 28, 0.637) ;
+    color: white;
+    font-size: 17px;
+    border-radius: 20px;
+    height: 180px;
+    width: 330px;
+    text-align: center;
+    list-style-type: none;
+  
+  }
+  /*Fade effect*/
+.black{
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+}
+.shadow{
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(rgb(0, 0, 0)20%,rgba(0,0,0,0));
+    
+}
+/*Stranice poznatih*/
+.edhem-mulabdic , .salim-obralic , .semsa-suljakovic , .haad , .buric , .alma , .jozo{
+    height: 120vh;
+}
+.edhem-mulabdic{
+    background: url(pozadina-edhem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.salim-obralic{
+    background: url(pozadina-salim.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.semsa-suljakovic{
+    background: url(pozadina-šemsa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.haad{
+    background: url(pozadina-haad.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.buric{
+    background: url(pozadina-buric.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.alma{
+    background: url(pozadina-alma.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.jozo{
+    background: url(pozadina-jozo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+/*Tekst*/
+.tekst-1{
+    color: white;
+    background-color: rgba(29, 28, 28, 0.7) ;
+    margin-top: 30vh;
+    margin-left: 5%;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    font-size: large;
+    position: relative;
+    margin-bottom: 5vh;
+}
+.tekst-2{
+    color: white;
+    background-color: rgba(29, 28, 28, 0.7) ;
+    margin-top: 5vh;
+    margin-left: 5%;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    font-size: large;
+    position: relative;
+    margin-bottom: 5vh;
+}
+.tekst{
+    color: white;
+    background-color: rgba(29, 28, 28, 0.7) ;
+    margin-top: 30vh;
+    margin-left: 5%;
+    padding: 20px;
+    border-radius: 10px;
+    width: 40%;
+    font-size: large;
+    position: relative;
+    margin-bottom: 20vh;
+}
+/*Naslov poznatih*/
+.str-naslov{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
 
+/*Dugme za galeriju salima*/
+.galerija{
+    margin-top: 5px;
+    width: fit-content;
+    padding: 10px;
+    background-color: black;
+    text-decoration: underline;
+}
+/*Slika kod teksta*/
+.slika-tekst{
+    width: 50%;
+    float: right;
+    margin: 5px;
+}
